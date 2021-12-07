@@ -1,0 +1,11 @@
+{% extends 'helloworld/base.html' %}
+{% block body %}
+
+<h1>Hey this is inhireted from base </h1>
+<ul>
+{% for mentor in mentors%}
+<li>{{mentor}}</li>
+{%endfor%}
+</ul>
+<span> developed by :{{developer}}</span>
+{% endblock body %}
